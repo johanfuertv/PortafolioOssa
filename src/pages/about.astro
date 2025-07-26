@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title='Sobre Mí' description='Sobre Johan Ossa - Desarrollador Backend con Java Spring Boot, estudiante de la Universidad del Valle, apasionado por el aprendizaje continuo.'>
+	<div class='container'>
+		<main class='prose text-lg dark:prose-invert'>
+			<article>
+				<div class='flex flex-col md:flex-row gap-6 items-center mb-2'>
+					<img
+						src='https://media.licdn.com/dms/image/v2/D4E03AQGXBhuCBWg4jg/profile-displayphoto-shrink_200_200/B4EZRr11rlHAAY-/0/1736976063641?e=1756339200&v=beta&t=gc2ACNNc38eqnkQMuCdbXCwQCa5Eg8A4ondQ1SFuNSE'
+						alt='Johan Ossa'
+						width='160'
+						height='160'
+						class='rounded-full border-4 border-primary shadow-lg'
+						loading='lazy'
+						decoding='async'
+					/>
+					<div>
+						<h1 class='text-3xl font-bold mb-2'>Una breve introducción: ¿Quién soy?</h1>
+						<p>
+							Mi nombre es <strong>Johan Ossa</strong>, soy colombiano y actualmente estudio en la <strong>Universidad del Valle</strong>. Desde que descubrí el mundo de la programación, me enamoré de resolver problemas mediante el código.
+						</p>
+						<p>
+							Me especializo como <strong>desarrollador backend</strong> utilizando <strong>Java con Spring Boot</strong>. Disfruto construir APIs robustas, bien estructuradas y seguras. Me apasiona escribir código limpio y aprender buenas prácticas que hagan mis aplicaciones escalables.
+						</p>
+						<p>
+							Soy una persona <strong>amable, responsable y estudiosa</strong>, que cree firmemente en el poder del aprendizaje continuo. Siempre estoy buscando nuevos retos y formas de mejorar, ya sea estudiando nuevas tecnologías o contribuyendo a proyectos reales.
+						</p>
+						<p>
+							Mi objetivo es seguir creciendo como profesional y aportar valor a equipos de desarrollo. Si estás interesado en colaborar o necesitas ayuda con un proyecto backend, estaré encantado de conversar contigo.
+						</p>
+					</div>
+				</div>
+			</article>
+		</main>
+	</div>
+</BaseLayout>

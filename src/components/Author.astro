@@ -1,0 +1,41 @@
+---
+type PicSize = 'sm' | 'md' | 'lg';
+interface Props {
+	picSize: PicSize;
+}
+const { picSize } = Astro.props;
+---
+
+<div class='flex gap-4 items-center leading-tight not-prose'>
+	<a
+		href='https://github.com/johanfuertv'
+		target='_blank'
+		rel='noopener noreferrer'
+		class:list={[
+			'rounded-full overflow-hidden shrink-0',
+			{ 'w-12 h-12': picSize === 'sm' },
+			{ 'w-[70px] h-[70px]': picSize === 'md' },
+			{ 'w-[90px] h-[90px]': picSize === 'lg' }
+		]}>
+		<img 
+			src='https://media.licdn.com/dms/image/v2/D4E03AQGXBhuCBWg4jg/profile-displayphoto-shrink_200_200/B4EZRr11rlHAAY-/0/1736976063641?e=1756339200&v=beta&t=gc2ACNNc38eqnkQMuCdbXCwQCa5Eg8A4ondQ1SFuNSE' 
+			alt='Johan Ossa' 
+			width='300' 
+			height='300'
+			class='w-full h-full object-cover'
+			loading='lazy'
+		/>
+	</a>
+	<div>
+		<div>
+			<a
+				href='https://github.com/johanfuertv'
+				class='block font-bold text-inherit hover:text-(--link-color)'
+				target='_blank'
+				rel='noopener noreferrer'>
+				Johan Ossa
+			</a>
+		</div>
+		<small class='avatar__subtitle'>Desarrollador Full Stack Colombiano</small>
+	</div>
+</div>

@@ -1,0 +1,145 @@
+---
+const experiences = [
+	{
+		title: 'Buscando Nuevas Oportunidades',
+		location: 'Colombia / Remoto',
+		period: 'Actualmente',
+		color: 'green',
+		description: `Estoy disponible para trabajar en proyectos reales como desarrollador full stack. Tengo experiencia construyendo soluciones completas (frontend y backend) para clientes reales, tanto en Colombia como para el extranjero.`
+	},
+	{
+		title: 'Desarrollador Full Stack · Web para Café Local',
+		company: 'Cliente Real',
+		location: 'Colombia',
+		type: 'Backend + Frontend',
+		period: '2024',
+		color: 'green',
+		description: `Desarrollé una página web para un café local, con gestión de productos, ventas y pedidos. El backend fue construido con Java Spring Boot (APIs REST) y el frontend con HTML, CSS y JavaScript.`
+	},
+	{
+		title: 'Plataforma de Wishlist Navideña Internacional',
+		company: 'Cliente en el Exterior',
+		link: "https://brown-herring-662567.hostingersite.com/",
+		location: 'Remoto',
+		type: 'Full Stack',
+		period: '2024',
+		color: 'green',
+		description: `Proyecto real con enfoque internacional. Permite a los usuarios crear y compartir listas de deseos de Navidad, con funcionalidades para recibir regalos o hacer intercambios. Incluye backend personalizado y panel de usuario.`
+	},
+	{
+		title: 'App Móvil · WhereToGo',
+		link: 'https://github.com/johanfuertv/WhereToGo-App',
+		period: '2024',
+		color: 'gray',
+		description: `Aplicación Android que recomienda destinos según las preferencias del usuario. Proyecto real publicado en GitHub, desarrollado en Android Studio con soporte para múltiples pantallas.`
+	},
+	{
+		title: 'App Educativa · Ossafit Quiz',
+		link: 'https://github.com/johanfuertv/ossafitquiz',
+		period: '2023',
+		color: 'gray',
+		description: `Aplicación tipo trivia sobre temas de fitness. Desarrollada para clientes que deseaban una solución educativa para su comunidad.`
+	},
+	{
+		title: 'App Android · Calculadora + Info Personal',
+		link: 'https://github.com/johanfuertv/Calculadora-e-inf-personal-en-Android-Studio',
+		period: '2023',
+		color: 'gray',
+		description: `App Android con doble función: calculadora básica + visor de información personal útil para entrevistas o presentaciones rápidas.`
+	},
+	{
+		title: 'Desarrollador Open Source',
+		link: 'https://github.com/johanfuertv',
+		period: 'Desde 2023',
+		color: 'green',
+		description: `Mantengo y colaboro en proyectos open source en GitHub. Mi enfoque principal es backend con Java Spring Boot, pero también trabajo en proyectos frontend y full stack.`
+	}
+];
+---
+
+];
+---
+
+<style>
+	@keyframes green-pulse {
+		0%,
+		100% {
+			background-color: rgb(74 222 128); /* green-400 */
+			box-shadow:
+				0 10px 15px -3px rgba(74, 222, 128, 0.5),
+				0 4px 6px -2px rgba(74, 222, 128, 0.5);
+		}
+		50% {
+			background-color: rgb(34 197 94); /* green-500 */
+			box-shadow:
+				0 10px 15px -3px rgba(34, 197, 94, 0.8),
+				0 4px 6px -2px rgba(34, 197, 94, 0.8);
+		}
+	}
+
+	.green-pulse {
+		animation: green-pulse 2s ease-in-out infinite;
+	}
+</style>
+
+<section class='mb-8 lg:min-h-screen' id='experience'>
+	<h2 class='text-2xl sm:text-3xl font-bold mb-2 text-center'>Experience</h2>
+	<p class='mb-6 text-center'>
+		I’ve had the opportunity to gain valuable experience as a software developer, both as a freelancer and as an open-source contributor.
+		Below is a summary of my work and the skills I've developed along the way.
+	</p>
+	<div class='relative'>
+		<!-- Main vertical line -->
+		<div class='absolute left-6 sm:left-1/2 w-0.5 bg-gray-300 dark:bg-gray-600 h-full'></div>
+
+		<div class='space-y-6 sm:space-y-8'>
+			{
+				experiences.map((exp, idx) => {
+					return (
+						<div class={`relative flex items-start sm:items-center`}>
+							{/* Circle indicator */}
+							<div class='absolute left-4 sm:left-1/2 transform sm:-translate-x-1/2 z-10 mt-1 sm:mt-0'>
+								<div
+									class={`w-4 h-4 sm:w-6 sm:h-6 rounded-full border-2 sm:border-4 border-white dark:border-gray-900 ${exp.color === 'green' ? 'bg-green-400 green-pulse' : 'bg-zinc-400 shadow-md'}`}
+								/>
+							</div>
+							{/* Content */}
+							<div class={`w-full pl-12 sm:w-1/2 ${idx % 2 === 1 ? 'sm:pr-8 sm:text-right sm:pl-0' : 'sm:ml-auto sm:pl-8'}`}>
+								<time class='font-mono italic text-xs sm:text-sm'>{exp.period}</time>
+								{exp.link ? (
+									<a href={exp.link} target='_blank' rel='noopener' class='block group focus:outline-none'>
+										<div class={`text-base sm:text-lg font-black group-hover:underline group-focus:underline`}>
+											{exp.title}
+											{exp.company || exp.type || exp.location ? (
+												<span class='font-normal text-gray-700 dark:text-gray-300'>
+													{exp.company ? ` · ${exp.company}` : ''}
+													{exp.type ? ` · ${exp.type}` : ''}
+													{exp.location ? ` · ${exp.location}` : ''}
+												</span>
+											) : null}
+										</div>
+										<p class='mt-1 sm:mt-2 text-sm sm:text-base'>{exp.description}</p>
+									</a>
+								) : (
+									<>
+										<div class={`text-base sm:text-lg font-black`}>
+											{exp.title}
+											{exp.company || exp.type || exp.location ? (
+												<span class='font-normal text-gray-700 dark:text-gray-300'>
+													{exp.company ? ` · ${exp.company}` : ''}
+													{exp.type ? ` · ${exp.type}` : ''}
+													{exp.location ? ` · ${exp.location}` : ''}
+												</span>
+											) : null}
+										</div>
+										<p class='mt-1 sm:mt-2 text-sm sm:text-base'>{exp.description}</p>
+									</>
+								)}
+							</div>
+						</div>
+					);
+				})
+			}
+		</div>
+	</div>
+</section>
