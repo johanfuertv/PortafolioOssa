@@ -1,0 +1,307 @@
+<!DOCTYPE html><html lang="en" class="bg-white dark:bg-zinc-900 dark:text-zinc-100"> <head><html lang="es"> <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/assets/img/favicon.png"><meta name="generator" content="Astro v5.12.4"><link rel="canonical" href="https://muhammadfiaz.com/"><link rel="sitemap" href="/sitemap-index.xml"><title>Muhammad Fiaz | Full Stack Developer</title><meta name="title" content="Muhammad Fiaz | Full Stack Developer"><meta name="description" content="Welcome to my portfolio! Discover my latest projects, skills, and professional journey as a full stack developer."><meta name="author" content="Johan Ossa"><meta name="keywords" content="Johan Ossa, Full Stack Developer, Java, Spring Boot, React, Node.js, Astro, PostgreSQL, MongoDB, GitHub, Colombia, Universidad del Valle"><meta name="robots" content="index, follow"><meta name="googlebot" content="index, follow"><meta name="X-Robots-Tag" content="index, follow"><meta name="language" content="Spanish"><meta name="theme-color" content="#1f2937"><meta name="email" content="contacto@johanossa.dev"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:url" content="https://muhammadfiaz.com/"><meta property="og:title" content="Muhammad Fiaz | Full Stack Developer"><meta property="og:description" content="Welcome to my portfolio! Discover my latest projects, skills, and professional journey as a full stack developer."><meta property="og:image" content="https://media.licdn.com/dms/image/v2/D4E03AQGXBhuCBWg4jg/profile-displayphoto-shrink_200_200/B4EZRr11rlHAAY-/0/1736976063641?e=1756339200&#38;v=beta&#38;t=gc2ACNNc38eqnkQMuCdbXCwQCa5Eg8A4ondQ1SFuNSE"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:site_name" content="Portafolio de Johan Ossa"><meta property="og:locale" content="es_CO"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://muhammadfiaz.com/"><meta property="twitter:title" content="Muhammad Fiaz | Full Stack Developer"><meta property="twitter:description" content="Welcome to my portfolio! Discover my latest projects, skills, and professional journey as a full stack developer."><meta property="twitter:image" content="https://media.licdn.com/dms/image/v2/D4E03AQGXBhuCBWg4jg/profile-displayphoto-shrink_200_200/B4EZRr11rlHAAY-/0/1736976063641?e=1756339200&#38;v=beta&#38;t=gc2ACNNc38eqnkQMuCdbXCwQCa5Eg8A4ondQ1SFuNSE"><meta property="twitter:creator" content="@johanfuertv"><meta property="twitter:site" content="@johanfuertv"><!-- SEO adicionales --><meta name="format-detection" content="telephone=no"><meta name="msapplication-TileColor" content="#1f2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="publisher" content="Johan Ossa"><!-- Preconexión --><link rel="preconnect" href="https://github.com"><link rel="preconnect" href="https://media.licdn.com/dms/image/v2/D4E03AQGXBhuCBWg4jg/profile-displayphoto-shrink_200_200/B4EZRr11rlHAAY-/0/1736976063641?e=1756339200&v=beta&t=gc2ACNNc38eqnkQMuCdbXCwQCa5Eg8A4ondQ1SFuNSE"><!-- Schema: Persona --><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Johan Ossa","url":"https://github.com/johanfuertv","sameAs":["https://github.com/johanfuertv","https://www.linkedin.com/in/johan-ossa-serna-61b2a320b/","https://twitter.com/johanfuertv"],"jobTitle":"Full Stack Developer","email":"contacto@johanossa.dev"}</script><!-- Schema: FAQ --><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Quién eres?","acceptedAnswer":{"@type":"Answer","text":"Hola 👋, soy Johan Ossa, desarrollador full stack colombiano. He construido soluciones reales para clientes con tecnologías como Java Spring Boot, React, Node.js, Astro y bases de datos relacionales y no relacionales. Egresado de la Universidad del Valle, me apasiona crear productos útiles y bien hechos."}},{"@type":"Question","name":"¿Qué tecnologías utilizas?","acceptedAnswer":{"@type":"Answer","text":"Trabajo en toda la pila: frontend con React, Astro y Tailwind, y backend con Java Spring Boot, Node.js y PostgreSQL. También manejo integración de APIs, Git, y despliegue en servidores o servicios en la nube."}},{"@type":"Question","name":"¿Estás disponible para trabajar?","acceptedAnswer":{"@type":"Answer","text":"Sí, actualmente estoy disponible para trabajar en proyectos freelance o tiempo completo. Puedes escribirme por LinkedIn o correo para coordinar una reunión."}},{"@type":"Question","name":"¿Contribuyes a proyectos reales?","acceptedAnswer":{"@type":"Answer","text":"Sí, todos los proyectos que muestro son reales, hechos para clientes o empresas. No son conceptos ni ejemplos inventados."}},{"@type":"Question","name":"¿Trabajas con clientes internacionales?","acceptedAnswer":{"@type":"Answer","text":"Sí, he trabajado con clientes de Colombia y del exterior. Me adapto bien a diferentes contextos y equipos remotos."}}]}</script></html><script>
+			// Immediately set theme before any rendering to prevent flash
+			(function () {
+				function getCookie(name) {
+					const value = `; ${document.cookie}`;
+					const parts = value.split(`; ${name}=`);
+					if (parts.length === 2) return parts.pop().split(';').shift();
+				}
+				var theme = getCookie('theme');
+				// Also check localStorage as fallback
+				if (!theme && localStorage) {
+					theme = localStorage.getItem('theme');
+				}
+				// Also check system preference as fallback
+				if (!theme && window.matchMedia) {
+					theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+				}
+				if (theme === 'dark') {
+					document.documentElement.classList.add('dark');
+				} else {
+					document.documentElement.classList.remove('dark');
+				}
+				// Sync with localStorage
+				if (localStorage && theme) {
+					localStorage.setItem('theme', theme);
+				}
+			})();
+		</script><link rel="stylesheet" href="/_astro/_slug_.Cb-3Xsfc.css">
+<style>@keyframes green-pulse{0%,to{background-color:#4ade80;box-shadow:0 10px 15px -3px #4ade8080,0 4px 6px -2px #4ade8080}50%{background-color:#22c55e;box-shadow:0 10px 15px -3px #22c55ecc,0 4px 6px -2px #22c55ecc}}.green-pulse[data-astro-cid-xpq65ryk]{animation:green-pulse 2s ease-in-out infinite}
+.project-card[data-astro-cid-d4mtjuvi]{opacity:0;transform:translateY(20px);-webkit-transform:translate3d(0,20px,0);transform:translate3d(0,20px,0);-webkit-backface-visibility:hidden;backface-visibility:hidden;will-change:transform,opacity;transition:all .6s ease-out}.project-card[data-astro-cid-d4mtjuvi].visible{opacity:1;-webkit-transform:translate3d(0,0,0);transform:translateZ(0)}.project-card[data-astro-cid-d4mtjuvi]:hover{-webkit-transform:translate3d(0,-8px,0) scale(1.02);transform:translate3d(0,-8px,0) scale(1.02);box-shadow:0 25px 50px -12px #00000026;border-color:#3b82f64d}.dark[data-astro-cid-d4mtjuvi] .project-card[data-astro-cid-d4mtjuvi]:hover{box-shadow:0 25px 50px -12px #0006;border-color:#3b82f680}.project-card[data-astro-cid-d4mtjuvi]:focus-within{-webkit-transform:translate3d(0,-4px,0);transform:translate3d(0,-4px,0);box-shadow:0 20px 25px -5px #0000001a;border-color:#3b82f680;outline:2px solid rgba(59,130,246,.3);outline-offset:2px}.project-card[data-astro-cid-d4mtjuvi] h3[data-astro-cid-d4mtjuvi] a[data-astro-cid-d4mtjuvi]{transition:color .3s ease}.project-card[data-astro-cid-d4mtjuvi]:hover h3[data-astro-cid-d4mtjuvi] a[data-astro-cid-d4mtjuvi]{color:#3b82f6}.dark[data-astro-cid-d4mtjuvi] .project-card[data-astro-cid-d4mtjuvi]:hover h3[data-astro-cid-d4mtjuvi] a[data-astro-cid-d4mtjuvi]{color:#93c5fd}.project-card[data-astro-cid-d4mtjuvi] .tag[data-astro-cid-d4mtjuvi]{transition:all .3s ease}.project-card[data-astro-cid-d4mtjuvi]:hover .tag[data-astro-cid-d4mtjuvi]{-webkit-transform:translate3d(0,-1px,0);transform:translate3d(0,-1px,0);border-color:#3b82f64d;background-color:#3b82f60d}.dark[data-astro-cid-d4mtjuvi] .project-card[data-astro-cid-d4mtjuvi]:hover .tag[data-astro-cid-d4mtjuvi]{border-color:#93c5fd4d;background-color:#3b82f61a}@media (max-width: 768px){.project-card[data-astro-cid-d4mtjuvi]{transition:all .4s ease-out}.mobile-fallback[data-astro-cid-d4mtjuvi] .project-card[data-astro-cid-d4mtjuvi]{opacity:1!important;-webkit-transform:translate3d(0,0,0)!important;transform:translateZ(0)!important}}.no-js[data-astro-cid-d4mtjuvi] .project-card[data-astro-cid-d4mtjuvi]{opacity:1!important;-webkit-transform:translate3d(0,0,0)!important;transform:translateZ(0)!important}
+</style><script>!(function(w,p,f,c){if(!window.crossOriginIsolated && !navigator.serviceWorker) return;c=w[p]=Object.assign(w[p]||{},{"lib":"/~partytown/","debug":false});c[f]=(c[f]||[])})(window,'partytown','forward');/* Partytown 0.11.2 - MIT QwikDev */
+const t={preserveBehavior:!1},e=e=>{if("string"==typeof e)return[e,t];const[n,r=t]=e;return[n,{...t,...r}]},n=Object.freeze((t=>{const e=new Set;let n=[];do{Object.getOwnPropertyNames(n).forEach((t=>{"function"==typeof n[t]&&e.add(t)}))}while((n=Object.getPrototypeOf(n))!==Object.prototype);return Array.from(e)})());!function(t,r,o,i,a,s,c,l,d,p,u=t,f){function h(){f||(f=1,"/"==(c=(s.lib||"/~partytown/")+(s.debug?"debug/":""))[0]&&(d=r.querySelectorAll('script[type="text/partytown"]'),i!=t?i.dispatchEvent(new CustomEvent("pt1",{detail:t})):(l=setTimeout(v,(null==s?void 0:s.fallbackTimeout)||1e4),r.addEventListener("pt0",w),a?y(1):o.serviceWorker?o.serviceWorker.register(c+(s.swPath||"partytown-sw.js"),{scope:c}).then((function(t){t.active?y():t.installing&&t.installing.addEventListener("statechange",(function(t){"activated"==t.target.state&&y()}))}),console.error):v())))}function y(e){p=r.createElement(e?"script":"iframe"),t._pttab=Date.now(),e||(p.style.display="block",p.style.width="0",p.style.height="0",p.style.border="0",p.style.visibility="hidden",p.setAttribute("aria-hidden",!0)),p.src=c+"partytown-"+(e?"atomics.js?v=0.11.2":"sandbox-sw.html?"+t._pttab),r.querySelector(s.sandboxParent||"body").appendChild(p)}function v(n,o){for(w(),i==t&&(s.forward||[]).map((function(n){const[r]=e(n);delete t[r.split(".")[0]]})),n=0;n<d.length;n++)(o=r.createElement("script")).innerHTML=d[n].innerHTML,o.nonce=s.nonce,r.head.appendChild(o);p&&p.parentNode.removeChild(p)}function w(){clearTimeout(l)}s=t.partytown||{},i==t&&(s.forward||[]).map((function(r){const[o,{preserveBehavior:i}]=e(r);u=t,o.split(".").map((function(e,r,o){var a;u=u[o[r]]=r+1<o.length?u[o[r]]||(a=o[r+1],n.includes(a)?[]:{}):(()=>{let e=null;if(i){const{methodOrProperty:n,thisObject:r}=((t,e)=>{let n=t;for(let t=0;t<e.length-1;t+=1)n=n[e[t]];return{thisObject:n,methodOrProperty:e.length>0?n[e[e.length-1]]:void 0}})(t,o);"function"==typeof n&&(e=(...t)=>n.apply(r,...t))}return function(){let n;return e&&(n=e(arguments)),(t._ptf=t._ptf||[]).push(o,arguments),n}})()}))})),"complete"==r.readyState?h():(t.addEventListener("DOMContentLoaded",h),t.addEventListener("load",h))}(window,document,navigator,top,window.crossOriginIsolated);;(e=>{e.addEventListener("astro:before-swap",e=>{let r=document.body.querySelector("iframe[src*='/~partytown/']");if(r)e.newDocument.body.append(r)})})(document);</script></head> <body class="bg-white dark:bg-zinc-900 dark:text-zinc-100 pt-4 sm:pt-0 invisible"> <script>
+			// Immediately show content after theme is set
+			document.body.classList.remove('invisible');
+			document.body.classList.add('visible');
+		</script> <head><link rel="preload" as="image" href="/assets/gif/loading-laptop.gif"></head> <div id="splash-screen" class="fixed inset-0 z-[9999] flex items-center justify-center bg-white dark:bg-zinc-900 transition-opacity duration-500"> <div class="text-center"> <img src="/assets/gif/loading-laptop.gif" alt="Loading..." class="mx-auto mb-8 object-contain w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[380px] md:h-[380px] lg:w-[450px] lg:h-[450px] xl:w-[500px] xl:h-[500px]" width="500" height="500"> <div class="text-xl sm:text-2xl md:text-3xl font-bold text-zinc-800 dark:text-zinc-100 flex items-center justify-center"> <span>Loading</span> <span id="loading-dots" class="inline-block w-6 text-left">.</span> </div> </div> </div> <script>
+	// Start the dot animation immediately and keep it running
+	const dots = document.getElementById('loading-dots');
+	let count = 1;
+
+	// Start dot animation right away
+	const dotInterval = setInterval(() => {
+		count = count < 3 ? count + 1 : 1;
+		if (dots) dots.textContent = '.'.repeat(count);
+	}, 400); // Smooth dot animation timing
+
+	// Handle splash screen removal when page loads
+	window.addEventListener('load', function () {
+		const splash = document.getElementById('splash-screen');
+		if (splash) {
+			// Keep dot animation running until splash screen is fully removed
+			setTimeout(() => {
+				splash.style.opacity = '0';
+				setTimeout(() => {
+					splash.remove();
+					clearInterval(dotInterval); // Only clear when splash is completely gone
+				}, 500);
+			}, 200); // Small delay to let user see the loading animation
+		}
+	});
+</script> <header id="site-header" class="flex items-center w-full transition duration-300 z-999 border-(--soft-border-color)"> <div class="container"> <nav class="flex gap-4 items-center justify-between py-1"> <h2 class="m-0"> <a href="/" class="flex gap-4 items-center text-xl font-black uppercase">Johan Ossa </a> </h2> <div class="flex"> <a class="p-3 dark:hidden" href="https://github.com/johanfuertv?tab=repositories" target="_blank"> <img src="/assets/img/github-mark.svg" width="24" height="24" alt="Github logo" loading="lazy" decoding="async"> </a> <a class="p-3 hidden dark:block" href="https://github.com/johanfuertv?tab=repositories" target="_blank"> <img src="/assets/img/github-mark-white.svg" width="24" height="24" alt="Github logo" loading="lazy" decoding="async"> </a> <a class="p-3" href="https://www.linkedin.com/in/johan-ossa-serna-61b2a320b/" target="_blank" aria-label="LinkedIn"> <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm15.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"></path></svg> </a> <a class="p-3" href="" target="_blank" aria-label="Twitter"> <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 4.557a9.93 9.93 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724c-.951.564-2.005.974-3.127 1.195a4.92 4.92 0 0 0-8.384 4.482c-4.086-.205-7.713-2.164-10.141-5.144a4.822 4.822 0 0 0-.666 2.475c0 1.708.87 3.216 2.188 4.099a4.904 4.904 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 0 1-2.224.084c.627 1.956 2.444 3.377 4.6 3.417a9.867 9.867 0 0 1-6.102 2.104c-.396 0-.787-.023-1.175-.069a13.945 13.945 0 0 0 7.548 2.212c9.057 0 14.009-7.513 14.009-14.009 0-.213-.005-.425-.014-.636a10.012 10.012 0 0 0 2.457-2.548z"></path></svg> </a> </div> </nav> <div id="bottom-navbar" class="fixed bottom-2 left-1/2 -translate-x-1/2 w-auto max-w-full px-4 z-999 transition-transform duration-500 ease-in-out flex justify-center items-center translate-y-full text-base md:text-lg" style="min-height:64px;"> <div class="flex items-center justify-center px-4 py-2 bg-white/90 dark:bg-zinc-900/75 backdrop-blur-md leading-tight rounded-full border dark:border-zinc-700 shadow-lg"> <div class="px-2.5 text-sm"> <a href="/" class="py-3 flex items-center border-b border-zinc-500 dark:border-zinc-300 text-zinc-950 dark:text-zinc-50" aria-label="Home">  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>  </a> </div> <div class="px-2.5 text-sm"> <a href="/about/" class="py-3 flex items-center text-zinc-600 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-zinc-50"> About </a> </div><div class="px-2.5 text-sm"> <a href="/posts/" class="py-3 flex items-center text-zinc-600 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-zinc-50"> Posts </a> </div><div class="px-2.5 text-sm"> <a href="/projects/" class="py-3 flex items-center text-zinc-600 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-zinc-50"> Projects </a> </div><div class="px-2.5 text-sm"> <a href="/tags/" class="py-3 flex items-center text-zinc-600 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-zinc-50"> Tags </a> </div> <button class="p-3" id="themeToggle" aria-label="Theme mode"> <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg> <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"> <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg> </button> </div> </div> </div>  <script>
+		function sendMessage(message) {
+			const iframe = document.querySelector('iframe.giscus-frame');
+			if (!iframe) return;
+			iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+		}
+
+		const handleToggleClick = () => {
+			const isDark = document.documentElement.classList.contains('dark');
+			const newTheme = isDark ? 'light' : 'dark';
+			window.setTheme(newTheme);
+			if (newTheme === 'dark') {
+				sendMessage({ setConfig: { theme: 'dark_dimmed' } });
+			} else {
+				sendMessage({ setConfig: { theme: 'light' } });
+			}
+		};
+		document.getElementById('themeToggle')?.addEventListener('click', handleToggleClick);
+
+		let hideTimeout;
+		const navbar = document.getElementById('bottom-navbar');
+		function showNavbar() {
+			if (!navbar) return;
+			navbar.classList.add('translate-y-0');
+			navbar.classList.remove('translate-y-full');
+		}
+		function hideNavbar() {
+			if (!navbar) return;
+			navbar.classList.add('translate-y-full');
+			navbar.classList.remove('translate-y-0');
+		}
+		function scheduleHide() {
+			clearTimeout(hideTimeout);
+			hideTimeout = setTimeout(hideNavbar, 2000);
+		}
+		// Show on scroll, hide after 2s
+		window.addEventListener('scroll', () => {
+			showNavbar();
+			scheduleHide();
+			lastScrollY = window.scrollY;
+		});
+		// Show when mouse near bottom
+		window.addEventListener('mousemove', (e) => {
+			if (window.innerHeight - e.clientY < 80) {
+				showNavbar();
+				clearTimeout(hideTimeout);
+			} else {
+				scheduleHide();
+			}
+		});
+		// Initial state
+		hideNavbar();
+	</script> </header> <div class="py-8 min-h-[calc(100vh-160px)]">   <div class="animate-section opacity-0 transform translate-y-8 scale-98" data-delay="0"> <section id="hero-section" class="w-full flex items-center justify-center min-h-screen md:h-screen relative"> <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[calc(50%+160px)] flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 w-full px-4 max-w-7xl mx-auto">  <div class="flex flex-col-reverse md:flex-row items-center md:items-center w-full md:w-auto gap-16 md:gap-[36rem] justify-center"> <div class="text-pretty leading-9 max-w-xs sm:max-w-md md:max-w-lg w-full flex flex-col items-start text-left"> <span class="text-2xl sm:text-3xl font-bold mb-2 block">Hello, I'm</span> <h2 class="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 whitespace-nowrap break-keep max-w-full">
+Johan Ossa
+</h2> <div class="text-base sm:text-lg min-h-[2.5em] flex items-center justify-start w-full"> <span id="typing-animation" class="whitespace-nowrap font-mono block w-[17ch] max-w-full"></span> </div> <div class="flex flex-col sm:flex-row gap-4 mt-6 w-full sm:w-auto"> <a href="mailto:johanossa697@gmail.com" class="px-6 py-2 rounded-full border-2 border-green-800 bg-green-100 text-green-900 font-semibold shadow-none hover:bg-green-600 hover:text-white focus:bg-green-700 focus:text-white focus:animate-pulse transition-colors text-center w-full sm:w-auto">
+Contact Me
+</a> <a href="https://www.linkedin.com/in/johan-ossa-serna-61b2a320b/" target="_blank" rel="noopener" class="px-6 py-2 rounded-full border-2 border-yellow-700 bg-yellow-100 text-yellow-900 font-semibold shadow-none hover:bg-yellow-500 hover:text-white focus:bg-yellow-700 focus:text-white focus:animate-pulse transition-colors text-center w-full sm:w-auto">
+Contactame en Linkedin
+</a> </div> </div> <div class="relative inline-block w-52 h-52 sm:w-64 sm:h-64 md:w-[300px] md:h-[300px] mb-12 md:mb-0 md:-translate-x-8"> <div class="absolute inset-0 z-10 rounded-[3rem] pointer-events-none bg-none shadow-2xl shadow-blue-400/30 dark:shadow-white/20"></div> <img src="https://media.licdn.com/dms/image/v2/D4E03AQGXBhuCBWg4jg/profile-displayphoto-shrink_200_200/B4EZRr11rlHAAY-/0/1736976063641?e=1756339200&v=beta&t=gc2ACNNc38eqnkQMuCdbXCwQCa5Eg8A4ondQ1SFuNSE" alt="Johan Ossa" width="260" height="260" class="rounded-3xl rotate-3 flex-shrink-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105 hover:shadow-2xl relative z-20 border-4 border-black dark:border-white" loading="eager" fetchpriority="high" decoding="async"> </div> </div> </div> </section> </div>  <div class="container mx-auto px-4"> <main class="flex flex-col gap-16 relative z-10"> <div class="animate-section opacity-0 transform translate-y-8 scale-98" data-delay="200"> ];
+---
+<section class="mb-8 lg:min-h-screen" id="experience" data-astro-cid-xpq65ryk> <h2 class="text-2xl sm:text-3xl font-bold mb-2 text-center" data-astro-cid-xpq65ryk>Experience</h2> <p class="mb-6 text-center" data-astro-cid-xpq65ryk>
+I’ve had the opportunity to gain valuable experience as a software developer, both as a freelancer and as an open-source contributor.
+		Below is a summary of my work and the skills I've developed along the way.
+</p> <div class="relative" data-astro-cid-xpq65ryk> <!-- Main vertical line --> <div class="absolute left-6 sm:left-1/2 w-0.5 bg-gray-300 dark:bg-gray-600 h-full" data-astro-cid-xpq65ryk></div> <div class="space-y-6 sm:space-y-8" data-astro-cid-xpq65ryk> <div class="relative flex items-start sm:items-center" data-astro-cid-xpq65ryk>  <div class="absolute left-4 sm:left-1/2 transform sm:-translate-x-1/2 z-10 mt-1 sm:mt-0" data-astro-cid-xpq65ryk> <div class="w-4 h-4 sm:w-6 sm:h-6 rounded-full border-2 sm:border-4 border-white dark:border-gray-900 bg-green-400 green-pulse" data-astro-cid-xpq65ryk></div> </div>  <div class="w-full pl-12 sm:w-1/2 sm:ml-auto sm:pl-8" data-astro-cid-xpq65ryk> <time class="font-mono italic text-xs sm:text-sm" data-astro-cid-xpq65ryk>Actualmente</time>  <div class="text-base sm:text-lg font-black" data-astro-cid-xpq65ryk> Buscando Nuevas Oportunidades <span class="font-normal text-gray-700 dark:text-gray-300" data-astro-cid-xpq65ryk>    · Colombia / Remoto </span> </div> <p class="mt-1 sm:mt-2 text-sm sm:text-base" data-astro-cid-xpq65ryk>Estoy disponible para trabajar en proyectos reales como desarrollador full stack. Tengo experiencia construyendo soluciones completas (frontend y backend) para clientes reales, tanto en Colombia como para el extranjero.</p>  </div> </div><div class="relative flex items-start sm:items-center" data-astro-cid-xpq65ryk>  <div class="absolute left-4 sm:left-1/2 transform sm:-translate-x-1/2 z-10 mt-1 sm:mt-0" data-astro-cid-xpq65ryk> <div class="w-4 h-4 sm:w-6 sm:h-6 rounded-full border-2 sm:border-4 border-white dark:border-gray-900 bg-green-400 green-pulse" data-astro-cid-xpq65ryk></div> </div>  <div class="w-full pl-12 sm:w-1/2 sm:pr-8 sm:text-right sm:pl-0" data-astro-cid-xpq65ryk> <time class="font-mono italic text-xs sm:text-sm" data-astro-cid-xpq65ryk>2024</time>  <div class="text-base sm:text-lg font-black" data-astro-cid-xpq65ryk> Desarrollador Full Stack · Web para Café Local <span class="font-normal text-gray-700 dark:text-gray-300" data-astro-cid-xpq65ryk>  · Cliente Real  · Backend + Frontend  · Colombia </span> </div> <p class="mt-1 sm:mt-2 text-sm sm:text-base" data-astro-cid-xpq65ryk>Desarrollé una página web para un café local, con gestión de productos, ventas y pedidos. El backend fue construido con Java Spring Boot (APIs REST) y el frontend con HTML, CSS y JavaScript.</p>  </div> </div><div class="relative flex items-start sm:items-center" data-astro-cid-xpq65ryk>  <div class="absolute left-4 sm:left-1/2 transform sm:-translate-x-1/2 z-10 mt-1 sm:mt-0" data-astro-cid-xpq65ryk> <div class="w-4 h-4 sm:w-6 sm:h-6 rounded-full border-2 sm:border-4 border-white dark:border-gray-900 bg-green-400 green-pulse" data-astro-cid-xpq65ryk></div> </div>  <div class="w-full pl-12 sm:w-1/2 sm:ml-auto sm:pl-8" data-astro-cid-xpq65ryk> <time class="font-mono italic text-xs sm:text-sm" data-astro-cid-xpq65ryk>2024</time> <a href="https://brown-herring-662567.hostingersite.com/" target="_blank" rel="noopener" class="block group focus:outline-none" data-astro-cid-xpq65ryk> <div class="text-base sm:text-lg font-black group-hover:underline group-focus:underline" data-astro-cid-xpq65ryk> Plataforma de Wishlist Navideña Internacional <span class="font-normal text-gray-700 dark:text-gray-300" data-astro-cid-xpq65ryk>  · Cliente en el Exterior  · Full Stack  · Remoto </span> </div> <p class="mt-1 sm:mt-2 text-sm sm:text-base" data-astro-cid-xpq65ryk>Proyecto real con enfoque internacional. Permite a los usuarios crear y compartir listas de deseos de Navidad, con funcionalidades para recibir regalos o hacer intercambios. Incluye backend personalizado y panel de usuario.</p> </a> </div> </div><div class="relative flex items-start sm:items-center" data-astro-cid-xpq65ryk>  <div class="absolute left-4 sm:left-1/2 transform sm:-translate-x-1/2 z-10 mt-1 sm:mt-0" data-astro-cid-xpq65ryk> <div class="w-4 h-4 sm:w-6 sm:h-6 rounded-full border-2 sm:border-4 border-white dark:border-gray-900 bg-zinc-400 shadow-md" data-astro-cid-xpq65ryk></div> </div>  <div class="w-full pl-12 sm:w-1/2 sm:pr-8 sm:text-right sm:pl-0" data-astro-cid-xpq65ryk> <time class="font-mono italic text-xs sm:text-sm" data-astro-cid-xpq65ryk>2024</time> <a href="https://github.com/johanfuertv/WhereToGo-App" target="_blank" rel="noopener" class="block group focus:outline-none" data-astro-cid-xpq65ryk> <div class="text-base sm:text-lg font-black group-hover:underline group-focus:underline" data-astro-cid-xpq65ryk> App Móvil · WhereToGo  </div> <p class="mt-1 sm:mt-2 text-sm sm:text-base" data-astro-cid-xpq65ryk>Aplicación Android que recomienda destinos según las preferencias del usuario. Proyecto real publicado en GitHub, desarrollado en Android Studio con soporte para múltiples pantallas.</p> </a> </div> </div><div class="relative flex items-start sm:items-center" data-astro-cid-xpq65ryk>  <div class="absolute left-4 sm:left-1/2 transform sm:-translate-x-1/2 z-10 mt-1 sm:mt-0" data-astro-cid-xpq65ryk> <div class="w-4 h-4 sm:w-6 sm:h-6 rounded-full border-2 sm:border-4 border-white dark:border-gray-900 bg-zinc-400 shadow-md" data-astro-cid-xpq65ryk></div> </div>  <div class="w-full pl-12 sm:w-1/2 sm:ml-auto sm:pl-8" data-astro-cid-xpq65ryk> <time class="font-mono italic text-xs sm:text-sm" data-astro-cid-xpq65ryk>2023</time> <a href="https://github.com/johanfuertv/ossafitquiz" target="_blank" rel="noopener" class="block group focus:outline-none" data-astro-cid-xpq65ryk> <div class="text-base sm:text-lg font-black group-hover:underline group-focus:underline" data-astro-cid-xpq65ryk> App Educativa · Ossafit Quiz  </div> <p class="mt-1 sm:mt-2 text-sm sm:text-base" data-astro-cid-xpq65ryk>Aplicación tipo trivia sobre temas de fitness. Desarrollada para clientes que deseaban una solución educativa para su comunidad.</p> </a> </div> </div><div class="relative flex items-start sm:items-center" data-astro-cid-xpq65ryk>  <div class="absolute left-4 sm:left-1/2 transform sm:-translate-x-1/2 z-10 mt-1 sm:mt-0" data-astro-cid-xpq65ryk> <div class="w-4 h-4 sm:w-6 sm:h-6 rounded-full border-2 sm:border-4 border-white dark:border-gray-900 bg-zinc-400 shadow-md" data-astro-cid-xpq65ryk></div> </div>  <div class="w-full pl-12 sm:w-1/2 sm:pr-8 sm:text-right sm:pl-0" data-astro-cid-xpq65ryk> <time class="font-mono italic text-xs sm:text-sm" data-astro-cid-xpq65ryk>2023</time> <a href="https://github.com/johanfuertv/Calculadora-e-inf-personal-en-Android-Studio" target="_blank" rel="noopener" class="block group focus:outline-none" data-astro-cid-xpq65ryk> <div class="text-base sm:text-lg font-black group-hover:underline group-focus:underline" data-astro-cid-xpq65ryk> App Android · Calculadora + Info Personal  </div> <p class="mt-1 sm:mt-2 text-sm sm:text-base" data-astro-cid-xpq65ryk>App Android con doble función: calculadora básica + visor de información personal útil para entrevistas o presentaciones rápidas.</p> </a> </div> </div><div class="relative flex items-start sm:items-center" data-astro-cid-xpq65ryk>  <div class="absolute left-4 sm:left-1/2 transform sm:-translate-x-1/2 z-10 mt-1 sm:mt-0" data-astro-cid-xpq65ryk> <div class="w-4 h-4 sm:w-6 sm:h-6 rounded-full border-2 sm:border-4 border-white dark:border-gray-900 bg-green-400 green-pulse" data-astro-cid-xpq65ryk></div> </div>  <div class="w-full pl-12 sm:w-1/2 sm:ml-auto sm:pl-8" data-astro-cid-xpq65ryk> <time class="font-mono italic text-xs sm:text-sm" data-astro-cid-xpq65ryk>Desde 2023</time> <a href="https://github.com/johanfuertv" target="_blank" rel="noopener" class="block group focus:outline-none" data-astro-cid-xpq65ryk> <div class="text-base sm:text-lg font-black group-hover:underline group-focus:underline" data-astro-cid-xpq65ryk> Desarrollador Open Source  </div> <p class="mt-1 sm:mt-2 text-sm sm:text-base" data-astro-cid-xpq65ryk>Mantengo y colaboro en proyectos open source en GitHub. Mi enfoque principal es backend con Java Spring Boot, pero también trabajo en proyectos frontend y full stack.</p> </a> </div> </div> </div> </div> </section> </div> <div class="animate-section opacity-0 transform translate-y-8 scale-98" data-delay="400"> <section class="w-full lg:min-h-screen md:px-8 xl:px-20 text-white bg-primary flex flex-col items-center justify-center"> <div class="w-full max-w-5xl flex flex-col items-center justify-center py-8"> <!-- Heading and Description --> <div class="w-full text-center mb-6"> <h2 class="text-2xl sm:text-3xl font-bold mb-2 text-center text-neutral-900 dark:text-white">Explore My Expertise & Tech Stack</h2> <p class="mb-6 text-center text-neutral-700 dark:text-neutral-300">
+These are the tools and technologies I use as a full stack developer with a passion for AI integration. I leverage modern stacks to
+				build scalable, intelligent web applications—spanning both frontend and backend for robust, maintainable, and user-friendly
+				solutions.
+</p> </div> <!-- Skills Icon Image --> <img src="https://skillicons.dev/icons?i=androidstudio,angular,atom,aws,azure,bash,blender,bootstrap,c,cs,cpp,cloudflare,codepen,css,dart,django,docker,dotnet,eclipse,express,figma,firebase,flask,flutter,gcp,git,github,githubactions,gitlab,go,gradle,gulp,heroku,html,idea,java,js,jquery,kotlin,linkedin,linux,md,mongodb,mysql,netlify,nextjs,nginx,nodejs,ps,php,rust,svelte,tauri,electron,postgres,powershell,py,pytorch,qt,react,redux,regex,sass,sqlite,stackoverflow,svg,tailwind,tensorflow,twitter,ts,unity,unreal,vercel,visualstudio,vite,vscode,vue,webflow,webpack,wordpress&perline=15" alt="My Skills" class="w-full max-w-3xl h-auto rounded-lg bg-transparent transition-transform duration-300 hover:scale-105" width="1200" height="200" loading="lazy" decoding="async"> </div> </section> </div> <!-- <RecentPosts /> --> <div class="animate-section opacity-0 transform translate-y-8 scale-98" data-delay="600"> <section class="flex flex-col justify-center lg:min-h-screen"> <div class="mb-8 text-center"> <h2 class="text-3xl font-bold mb-2">My Projects</h2> <p class="text-zinc-700 dark:text-zinc-300 text-lg">A selection of my real-world and open source projects.</p> </div> <div class="flex justify-between gap-2 mb-1"> <h3 class="text-lg font-bold mb-3">My Projects</h3> <a href="/projects/" class="inline-block py-2 underline dark:prose-invert">All projects &raquo;</a> </div> <div class="grid grid-cols-12 gap-5" data-astro-cid-d4mtjuvi> <div class="col-span-12 sm:col-span-6 lg:col-span-4 border dark:border-zinc-700 rounded-xl shadow-2xs p-5 project-card" id="project-card-0" data-index="0" data-astro-cid-d4mtjuvi> <div class="flex items-center justify-between my-2" data-astro-cid-d4mtjuvi> <h3 class="font-semibold" data-astro-cid-d4mtjuvi> <a class="underline" href="https://github.com/johanfuertv/PortafolioOssa" target="_blank" data-astro-cid-d4mtjuvi> PortafolioOssa </a> </h3> <div class="flex items-center gap-3 text-xs text-zinc-500 dark:text-zinc-400" data-astro-cid-d4mtjuvi> <span class="flex items-center gap-1" data-astro-cid-d4mtjuvi> <img src="/assets/img/github-mark.svg" height="12" width="12" class="dark:hidden" alt="Stars" loading="lazy" decoding="async" data-astro-cid-d4mtjuvi> <img src="/assets/img/github-mark-white.svg" height="12" width="12" class="hidden dark:block" alt="Stars" loading="lazy" decoding="async" data-astro-cid-d4mtjuvi> 0 </span> <span class="flex items-center gap-1" data-astro-cid-d4mtjuvi> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-label="Forks" data-astro-cid-d4mtjuvi> <path d="M6 3v12a3 3 0 0 0 3 3h6" data-astro-cid-d4mtjuvi></path> <circle cx="6" cy="3" r="3" data-astro-cid-d4mtjuvi></circle> <circle cx="18" cy="18" r="3" data-astro-cid-d4mtjuvi></circle> </svg> 0 </span> </div> </div> <div class="flex flex-wrap gap-2 w-full mb-2" data-astro-cid-d4mtjuvi>   </div> <div class="text-zinc-600 dark:text-zinc-300 mb-4 min-h-[50px] transition-all duration-300" data-astro-cid-d4mtjuvi> <p data-astro-cid-d4mtjuvi>Mi Portafolio Johan</p> </div> <div class="flex justify-end gap-3 mt-4" data-astro-cid-d4mtjuvi>  <a class="underline flex items-center gap-2" href="https://github.com/johanfuertv/PortafolioOssa" target="_blank" data-astro-cid-d4mtjuvi>
+Demo
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link" aria-label="External link" data-astro-cid-d4mtjuvi> <path d="M15 3h6v6" data-astro-cid-d4mtjuvi></path> <path d="M10 14 21 3" data-astro-cid-d4mtjuvi></path> <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" data-astro-cid-d4mtjuvi></path> </svg> </a> </div> </div><div class="col-span-12 sm:col-span-6 lg:col-span-4 border dark:border-zinc-700 rounded-xl shadow-2xs p-5 project-card" id="project-card-1" data-index="1" data-astro-cid-d4mtjuvi> <div class="flex items-center justify-between my-2" data-astro-cid-d4mtjuvi> <h3 class="font-semibold" data-astro-cid-d4mtjuvi> <a class="underline" href="https://github.com/johanfuertv/ossafitquiz" target="_blank" data-astro-cid-d4mtjuvi> ossafitquiz </a> </h3> <div class="flex items-center gap-3 text-xs text-zinc-500 dark:text-zinc-400" data-astro-cid-d4mtjuvi> <span class="flex items-center gap-1" data-astro-cid-d4mtjuvi> <img src="/assets/img/github-mark.svg" height="12" width="12" class="dark:hidden" alt="Stars" loading="lazy" decoding="async" data-astro-cid-d4mtjuvi> <img src="/assets/img/github-mark-white.svg" height="12" width="12" class="hidden dark:block" alt="Stars" loading="lazy" decoding="async" data-astro-cid-d4mtjuvi> 0 </span> <span class="flex items-center gap-1" data-astro-cid-d4mtjuvi> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-label="Forks" data-astro-cid-d4mtjuvi> <path d="M6 3v12a3 3 0 0 0 3 3h6" data-astro-cid-d4mtjuvi></path> <circle cx="6" cy="3" r="3" data-astro-cid-d4mtjuvi></circle> <circle cx="18" cy="18" r="3" data-astro-cid-d4mtjuvi></circle> </svg> 0 </span> </div> </div> <div class="flex flex-wrap gap-2 w-full mb-2" data-astro-cid-d4mtjuvi>   </div> <div class="text-zinc-600 dark:text-zinc-300 mb-4 min-h-[50px] transition-all duration-300" data-astro-cid-d4mtjuvi> <p data-astro-cid-d4mtjuvi>johan ossa - fitquiz app</p> </div> <div class="flex justify-end gap-3 mt-4" data-astro-cid-d4mtjuvi>  <a class="underline flex items-center gap-2" href="https://github.com/johanfuertv/ossafitquiz" target="_blank" data-astro-cid-d4mtjuvi>
+Demo
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link" aria-label="External link" data-astro-cid-d4mtjuvi> <path d="M15 3h6v6" data-astro-cid-d4mtjuvi></path> <path d="M10 14 21 3" data-astro-cid-d4mtjuvi></path> <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" data-astro-cid-d4mtjuvi></path> </svg> </a> </div> </div><div class="col-span-12 sm:col-span-6 lg:col-span-4 border dark:border-zinc-700 rounded-xl shadow-2xs p-5 project-card" id="project-card-2" data-index="2" data-astro-cid-d4mtjuvi> <div class="flex items-center justify-between my-2" data-astro-cid-d4mtjuvi> <h3 class="font-semibold" data-astro-cid-d4mtjuvi> <a class="underline" href="https://github.com/johanfuertv/WhereToGo-App" target="_blank" data-astro-cid-d4mtjuvi> WhereToGo-App </a> </h3> <div class="flex items-center gap-3 text-xs text-zinc-500 dark:text-zinc-400" data-astro-cid-d4mtjuvi> <span class="flex items-center gap-1" data-astro-cid-d4mtjuvi> <img src="/assets/img/github-mark.svg" height="12" width="12" class="dark:hidden" alt="Stars" loading="lazy" decoding="async" data-astro-cid-d4mtjuvi> <img src="/assets/img/github-mark-white.svg" height="12" width="12" class="hidden dark:block" alt="Stars" loading="lazy" decoding="async" data-astro-cid-d4mtjuvi> 0 </span> <span class="flex items-center gap-1" data-astro-cid-d4mtjuvi> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-label="Forks" data-astro-cid-d4mtjuvi> <path d="M6 3v12a3 3 0 0 0 3 3h6" data-astro-cid-d4mtjuvi></path> <circle cx="6" cy="3" r="3" data-astro-cid-d4mtjuvi></circle> <circle cx="18" cy="18" r="3" data-astro-cid-d4mtjuvi></circle> </svg> 0 </span> </div> </div> <div class="flex flex-wrap gap-2 w-full mb-2" data-astro-cid-d4mtjuvi>   </div> <div class="text-zinc-600 dark:text-zinc-300 mb-4 min-h-[50px] transition-all duration-300" data-astro-cid-d4mtjuvi> <p data-astro-cid-d4mtjuvi>Aplicación Finalizada de WhereToGo</p> </div> <div class="flex justify-end gap-3 mt-4" data-astro-cid-d4mtjuvi>  <a class="underline flex items-center gap-2" href="https://github.com/johanfuertv/WhereToGo-App" target="_blank" data-astro-cid-d4mtjuvi>
+Demo
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link" aria-label="External link" data-astro-cid-d4mtjuvi> <path d="M15 3h6v6" data-astro-cid-d4mtjuvi></path> <path d="M10 14 21 3" data-astro-cid-d4mtjuvi></path> <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" data-astro-cid-d4mtjuvi></path> </svg> </a> </div> </div><div class="col-span-12 sm:col-span-6 lg:col-span-4 border dark:border-zinc-700 rounded-xl shadow-2xs p-5 project-card" id="project-card-3" data-index="3" data-astro-cid-d4mtjuvi> <div class="flex items-center justify-between my-2" data-astro-cid-d4mtjuvi> <h3 class="font-semibold" data-astro-cid-d4mtjuvi> <a class="underline" href="https://github.com/johanfuertv/Ejercicio1JohanOssa" target="_blank" data-astro-cid-d4mtjuvi> Ejercicio1JohanOssa </a> </h3> <div class="flex items-center gap-3 text-xs text-zinc-500 dark:text-zinc-400" data-astro-cid-d4mtjuvi> <span class="flex items-center gap-1" data-astro-cid-d4mtjuvi> <img src="/assets/img/github-mark.svg" height="12" width="12" class="dark:hidden" alt="Stars" loading="lazy" decoding="async" data-astro-cid-d4mtjuvi> <img src="/assets/img/github-mark-white.svg" height="12" width="12" class="hidden dark:block" alt="Stars" loading="lazy" decoding="async" data-astro-cid-d4mtjuvi> 0 </span> <span class="flex items-center gap-1" data-astro-cid-d4mtjuvi> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-label="Forks" data-astro-cid-d4mtjuvi> <path d="M6 3v12a3 3 0 0 0 3 3h6" data-astro-cid-d4mtjuvi></path> <circle cx="6" cy="3" r="3" data-astro-cid-d4mtjuvi></circle> <circle cx="18" cy="18" r="3" data-astro-cid-d4mtjuvi></circle> </svg> 0 </span> </div> </div> <div class="flex flex-wrap gap-2 w-full mb-2" data-astro-cid-d4mtjuvi>   </div> <div class="text-zinc-600 dark:text-zinc-300 mb-4 min-h-[50px] transition-all duration-300" data-astro-cid-d4mtjuvi> <p data-astro-cid-d4mtjuvi>Ejercicio 1 analisis y calculo numerico</p> </div> <div class="flex justify-end gap-3 mt-4" data-astro-cid-d4mtjuvi>  <a class="underline flex items-center gap-2" href="https://github.com/johanfuertv/Ejercicio1JohanOssa" target="_blank" data-astro-cid-d4mtjuvi>
+Demo
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link" aria-label="External link" data-astro-cid-d4mtjuvi> <path d="M15 3h6v6" data-astro-cid-d4mtjuvi></path> <path d="M10 14 21 3" data-astro-cid-d4mtjuvi></path> <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" data-astro-cid-d4mtjuvi></path> </svg> </a> </div> </div><div class="col-span-12 sm:col-span-6 lg:col-span-4 border dark:border-zinc-700 rounded-xl shadow-2xs p-5 project-card" id="project-card-4" data-index="4" data-astro-cid-d4mtjuvi> <div class="flex items-center justify-between my-2" data-astro-cid-d4mtjuvi> <h3 class="font-semibold" data-astro-cid-d4mtjuvi> <a class="underline" href="https://github.com/johanfuertv/Punto3JohanOssa" target="_blank" data-astro-cid-d4mtjuvi> Punto3JohanOssa </a> </h3> <div class="flex items-center gap-3 text-xs text-zinc-500 dark:text-zinc-400" data-astro-cid-d4mtjuvi> <span class="flex items-center gap-1" data-astro-cid-d4mtjuvi> <img src="/assets/img/github-mark.svg" height="12" width="12" class="dark:hidden" alt="Stars" loading="lazy" decoding="async" data-astro-cid-d4mtjuvi> <img src="/assets/img/github-mark-white.svg" height="12" width="12" class="hidden dark:block" alt="Stars" loading="lazy" decoding="async" data-astro-cid-d4mtjuvi> 0 </span> <span class="flex items-center gap-1" data-astro-cid-d4mtjuvi> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-label="Forks" data-astro-cid-d4mtjuvi> <path d="M6 3v12a3 3 0 0 0 3 3h6" data-astro-cid-d4mtjuvi></path> <circle cx="6" cy="3" r="3" data-astro-cid-d4mtjuvi></circle> <circle cx="18" cy="18" r="3" data-astro-cid-d4mtjuvi></circle> </svg> 0 </span> </div> </div> <div class="flex flex-wrap gap-2 w-full mb-2" data-astro-cid-d4mtjuvi>   </div> <div class="text-zinc-600 dark:text-zinc-300 mb-4 min-h-[50px] transition-all duration-300" data-astro-cid-d4mtjuvi> <p data-astro-cid-d4mtjuvi>Punto 3 Proyecto Final</p> </div> <div class="flex justify-end gap-3 mt-4" data-astro-cid-d4mtjuvi>  <a class="underline flex items-center gap-2" href="https://github.com/johanfuertv/Punto3JohanOssa" target="_blank" data-astro-cid-d4mtjuvi>
+Demo
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link" aria-label="External link" data-astro-cid-d4mtjuvi> <path d="M15 3h6v6" data-astro-cid-d4mtjuvi></path> <path d="M10 14 21 3" data-astro-cid-d4mtjuvi></path> <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" data-astro-cid-d4mtjuvi></path> </svg> </a> </div> </div><div class="col-span-12 sm:col-span-6 lg:col-span-4 border dark:border-zinc-700 rounded-xl shadow-2xs p-5 project-card" id="project-card-5" data-index="5" data-astro-cid-d4mtjuvi> <div class="flex items-center justify-between my-2" data-astro-cid-d4mtjuvi> <h3 class="font-semibold" data-astro-cid-d4mtjuvi> <a class="underline" href="https://github.com/johanfuertv/WhereToGo" target="_blank" data-astro-cid-d4mtjuvi> WhereToGo </a> </h3> <div class="flex items-center gap-3 text-xs text-zinc-500 dark:text-zinc-400" data-astro-cid-d4mtjuvi> <span class="flex items-center gap-1" data-astro-cid-d4mtjuvi> <img src="/assets/img/github-mark.svg" height="12" width="12" class="dark:hidden" alt="Stars" loading="lazy" decoding="async" data-astro-cid-d4mtjuvi> <img src="/assets/img/github-mark-white.svg" height="12" width="12" class="hidden dark:block" alt="Stars" loading="lazy" decoding="async" data-astro-cid-d4mtjuvi> 0 </span> <span class="flex items-center gap-1" data-astro-cid-d4mtjuvi> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-label="Forks" data-astro-cid-d4mtjuvi> <path d="M6 3v12a3 3 0 0 0 3 3h6" data-astro-cid-d4mtjuvi></path> <circle cx="6" cy="3" r="3" data-astro-cid-d4mtjuvi></circle> <circle cx="18" cy="18" r="3" data-astro-cid-d4mtjuvi></circle> </svg> 0 </span> </div> </div> <div class="flex flex-wrap gap-2 w-full mb-2" data-astro-cid-d4mtjuvi>   </div> <div class="text-zinc-600 dark:text-zinc-300 mb-4 min-h-[50px] transition-all duration-300" data-astro-cid-d4mtjuvi> <p data-astro-cid-d4mtjuvi>Where To Go - Frontend and Microservices</p> </div> <div class="flex justify-end gap-3 mt-4" data-astro-cid-d4mtjuvi>  <a class="underline flex items-center gap-2" href="https://github.com/johanfuertv/WhereToGo" target="_blank" data-astro-cid-d4mtjuvi>
+Demo
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link" aria-label="External link" data-astro-cid-d4mtjuvi> <path d="M15 3h6v6" data-astro-cid-d4mtjuvi></path> <path d="M10 14 21 3" data-astro-cid-d4mtjuvi></path> <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" data-astro-cid-d4mtjuvi></path> </svg> </a> </div> </div> </div>  <script type="module">(function(){const c=/Chrome/.test(navigator.userAgent)&&/Mobile/.test(navigator.userAgent),d=window.location.hostname.includes("muhammadfiaz.com");document.documentElement.classList.remove("no-js"),c&&d&&setTimeout(()=>{document.documentElement.classList.add("mobile-fallback")},500);function l(){const o=document.querySelectorAll(".project-card");if(!o.length)return;let s=!1;function e(){if(s)return;s=!0,Array.from(o).sort((a,t)=>{const f=parseInt(a.getAttribute("data-index")||"0"),h=parseInt(t.getAttribute("data-index")||"0");return f-h}).forEach((a,t)=>{setTimeout(()=>{a.classList.add("visible")},t*150)})}let r=null;try{r=new IntersectionObserver(a=>{a.forEach(t=>{t.isIntersecting&&t.intersectionRatio>.1&&(e(),r&&r.unobserve(t.target))})},{threshold:.1,rootMargin:"0px 0px -50px 0px"});const n=o[0]?.parentElement;n&&r&&r.observe(n)}catch{e();return}const m=window.innerHeight,u=o[0];if(u)try{u.getBoundingClientRect().top<m*.8&&e()}catch{e()}c&&d?setTimeout(()=>{s||e()},1e3):setTimeout(()=>{s||e()},2e3)}function i(){try{l()}catch{document.querySelectorAll(".project-card").forEach(e=>e.classList.add("visible"))}}document.readyState==="loading"?document.addEventListener("DOMContentLoaded",i):i(),c&&d&&(setTimeout(i,100),setTimeout(i,500)),window.addEventListener("load",()=>{setTimeout(i,100)})})();</script> </section> </div> <div class="animate-section opacity-0 transform translate-y-8 scale-98" data-delay="800">  </div> </main> </div>  </div> <footer class="container mt-8"> <div class="justify-center flex gap-4 py-8 prose dark:prose-invert text-sm"> <a href="https://www.linkedin.com/in/johan-ossa-serna-61b2a320b/" aria-label="Buy me a Coffee">Linkedin</a> <a href="/rss.xml" aria-label="RSS Feed">RSS</a> <a href="/sitemap-0.xml" aria-label="SiteMap">SiteMap</a> </div> <div class="py-4 border-t dark:border-t-zinc-700"> <div class="md:flex text-sm text-zinc-500 dark:text-zinc-300 prose dark:prose-invert justify-between"> <div>Copyright © 2025 Johan Ossa.</div> <!-- Please leave the credit if you don't make significant changes to the template. It's just a nofollow link :)  --> <div>JohanFuertv <a href="https://www.linkedin.com/in/johan-ossa-serna-61b2a320b/" target="_blank" rel="nofollow noopener"></a></div> </div> </div> </footer> <!-- Google tag (gtag.js) -->  <script>
+			window.setTheme = function (theme) {
+				document.cookie = `theme=${theme};path=/;max-age=31536000`;
+				// Also save to localStorage for faster access
+				if (localStorage) {
+					localStorage.setItem('theme', theme);
+				}
+				if (theme === 'dark') {
+					document.documentElement.classList.add('dark');
+				} else {
+					document.documentElement.classList.remove('dark');
+				}
+			};
+		</script> </body> </html> <script>
+	// Typing animation with smooth, slower timing
+	const text = 'I am a Full Stack Developer';
+	const el = document.getElementById('typing-animation');
+	let i = 0;
+	let forward = true;
+	let lastTime = 0;
+	const forwardDelay = 120; // Slower typing
+	const backwardDelay = 60; // Slower deletion
+
+	function typeLoop(currentTime) {
+		if (!el) return;
+
+		if (currentTime - lastTime >= (forward ? forwardDelay : backwardDelay)) {
+			if (forward) {
+				el.textContent = text.slice(0, i);
+				if (i < text.length) {
+					i++;
+					lastTime = currentTime;
+				} else {
+					forward = false;
+					lastTime = currentTime + 2000; // Longer pause at end
+				}
+			} else {
+				el.textContent = text.slice(0, i);
+				if (i > 0) {
+					i--;
+					lastTime = currentTime;
+				} else {
+					forward = true;
+					lastTime = currentTime + 800; // Longer pause at start
+				}
+			}
+		}
+
+		requestAnimationFrame(typeLoop);
+	}
+
+	requestAnimationFrame(typeLoop);
+
+	// Smooth, slow fade-in animations with gentle timing
+	document.addEventListener('DOMContentLoaded', () => {
+		const observerOptions = {
+			threshold: 0.1,
+			rootMargin: '0px 0px -50px 0px'
+		};
+
+		const sectionObserver = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					const delay = parseInt(entry.target.getAttribute('data-delay') || '0');
+
+					// Triple requestAnimationFrame for ultra-smooth start
+					requestAnimationFrame(() => {
+						requestAnimationFrame(() => {
+							requestAnimationFrame(() => {
+								setTimeout(() => {
+									// Very slow, gentle transition with smooth easing
+									entry.target.style.transition =
+										'opacity 1.8s cubic-bezier(0.25, 0.1, 0.25, 1), transform 1.8s cubic-bezier(0.25, 0.1, 0.25, 1)';
+									entry.target.style.opacity = '1';
+									entry.target.style.transform = 'translateY(0px) scale(1)';
+
+									// Clean up will-change after animation completes
+									setTimeout(() => {
+										entry.target.style.willChange = 'auto';
+									}, 1800);
+								}, delay);
+							});
+						});
+					});
+
+					sectionObserver.unobserve(entry.target);
+				}
+			});
+		}, observerOptions);
+
+		// Gentle section preparation with subtle initial transforms
+		function prepareSections() {
+			const sections = document.querySelectorAll('.animate-section');
+
+			// Very gentle initial state for smooth fade-in
+			sections.forEach((section) => {
+				section.style.opacity = '0';
+				section.style.transform = 'translateY(24px) scale(0.98)';
+				section.style.willChange = 'opacity, transform';
+				section.style.backfaceVisibility = 'hidden';
+				section.style.perspective = '1000px';
+			});
+
+			// Smooth layout calculation
+			document.body.offsetHeight;
+		}
+
+		// Gentle animation start
+		function startSectionAnimations() {
+			prepareSections();
+
+			requestAnimationFrame(() => {
+				requestAnimationFrame(() => {
+					document.querySelectorAll('.animate-section').forEach((section) => {
+						sectionObserver.observe(section);
+					});
+				});
+			});
+		}
+
+		// Simplified splash screen detection
+		function isSplashScreenGone() {
+			const splash = document.getElementById('splash-screen');
+			if (!splash) return true;
+
+			const style = window.getComputedStyle(splash);
+			return style.display === 'none' || style.opacity === '0' || style.visibility === 'hidden' || splash.classList.contains('hidden');
+		}
+
+		// Patient splash screen waiting
+		function waitForSplashScreen() {
+			return new Promise((resolve) => {
+				if (isSplashScreenGone()) {
+					resolve();
+					return;
+				}
+
+				let resolved = false;
+
+				const checkInterval = setInterval(() => {
+					if (!resolved && isSplashScreenGone()) {
+						resolved = true;
+						clearInterval(checkInterval);
+						resolve();
+					}
+				}, 150); // Less frequent checks for gentler behavior
+
+				// Patient fallback timeout
+				setTimeout(() => {
+					if (!resolved) {
+						resolved = true;
+						clearInterval(checkInterval);
+						resolve();
+					}
+				}, 6000);
+			});
+		}
+
+		// Start animations with gentle, patient timing
+		waitForSplashScreen().then(() => {
+			requestAnimationFrame(() => {
+				setTimeout(() => {
+					startSectionAnimations();
+				}, 1000); // Longer initial delay for smooth transition
+			});
+		});
+	});
+</script>
