@@ -5,12 +5,19 @@ import { autoNewTabExternalLinks } from './src/autoNewTabExternalLinks';
 import robotsTxt from 'astro-robots-txt';
 import partytown from '@astrojs/partytown';
 import tailwindcss from '@tailwindcss/vite';
-import github from '@astrojs/github';
+import tailwind from '@astrojs/tailwind';
+import staticAdapter from '@astrojs/static';
 
 export default defineConfig({
-	site: 'https://johanfuertv.github.io/PortafolioOssa',
-	base: '/PortafolioOssa', // Configuración clave para GitHub Pages
-	integrations: [mdx(), sitemap(), partytown(), robotsTxt()],
+	site: 'https://johanfuertv.github.io/PortafolioOssa', // 👈 Tu URL de GitHub Pages
+	base: '/PortafolioOssa', // 👈 Carpeta base del repositorio
+	integrations: [
+		mdx(),
+		sitemap(),
+		partytown(),
+		robotsTxt(),
+		tailwind({ applyBaseStyles: false })
+	],
 	markdown: {
 		extendDefaultPlugins: true,
 		rehypePlugins: [
@@ -26,5 +33,5 @@ export default defineConfig({
 		plugins: [tailwindcss()]
 	},
 	output: 'static',
-	adapter: github() // Adaptador para GitHub Pages
+	adapter: staticAdapter()
 });
